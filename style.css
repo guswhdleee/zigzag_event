@@ -1,0 +1,19 @@
+/* Typograph */
+:root {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Layout */
+.l_wrapper {
+  height: 50vh;
+  width: 100vw;
+}
+
+/* Design */
+.first {
+  background-color: #6230a2;
+}
+
+.second {
+  background-color: #fff5ed;
+}
