@@ -1,10 +1,20 @@
 /* CSS Reset */
-p {
+p, ul, h1, h2 {
   margin: unset;
+  padding: unset;
 }
 
 body {
   margin: 0px;
+}
+
+li {
+  margin: unset;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* Typograph */
@@ -14,8 +24,8 @@ body {
 
 /* Layout */
 .h_wrapper {
-  height: 50vh;
-  width: 100vw;
+  height: 930px;
+  width: 100%;
 }
 
 .l_wrapper {
@@ -69,4 +79,92 @@ body {
   margin: auto 32px;
   flex-shrink: 0;
 }
+
+.content .first-content-inside {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.content .first-content-inside .content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content .first-content-inside .content-list .list-inside {
+  display: flex;
+  flex-direction: row;
+}
+
+.content .first-content-inside .content-list .reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+.content .first-content-inside .content-list .items-subject{
+  font-weight: 500;
+  width: 280px;
+  height: 148px;
+  background-image: url(./images/photo01.png);
+  background-size: cover;
+  position: relative;
+}
+
+.content .first-content-inside .content-list .second{
+  background-image: url(./images/photo02.png);
+}
+
+.content .first-content-inside .content-list .third {
+  background-image: url(./images/photo03.png);
+}
+
+.content .first-content-inside .content-list .items-subject .subject-title {
+  font-size: 32px;
+  color: #fff;
+  line-height: 44px;
+  width: fit-content;
+  margin: 52px 103px;
+  font-weight: 500;
+}
+
+.content .first-content-inside .content-list .items-subject .subject-title::after {
+  content: '';
+  background-color: #6230a2;
+  opacity: 50%;
+  position: absolute;
+  inset: 0;
+}
+
+.content .first-content-inside .content-list .list-inside .items-explain {
+  background-color: #fff;
+  padding-left: 21px;
+  padding-top: 16px;
+  font-size: 14px;
+  max-width: 800px;
+  flex-grow: 1;
+}
+
+.content .first-content-inside .content-list .list-inside .items-explain .items-title {
+  color: #6230a2;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.content .first-content-inside .content-list .list-inside .items-explain .items-list {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.content .first-content-inside .content-list .list-inside .items-explain .items-reason {
+  list-style: inside;
+  list-style-position: outside;
+  margin-left: 22px;
+}
+
+.content .first-content-inside .content-list .list-inside .items-explain .items-reason::marker {
+  color: #C89DFF;
+  font-size: 1.4em;
+}
+
 
