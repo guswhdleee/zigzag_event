@@ -2,6 +2,7 @@
 p, ul, h1, h2, h3 {
   margin: unset;
   padding: unset;
+  /* display: unset; */
 }
 
 body {
@@ -25,7 +26,7 @@ img {
 /* Layout */
 .h_wrapper {
   height: 930px;
-  width: 100%;
+  width: 1920px;
 }
 
 .l_wrapper {
@@ -171,6 +172,7 @@ img {
   display: flex;
   align-items: center;
   padding-top: 92px;
+  margin-bottom: 100px;
 }
 
 .header .second-header-inside .header-title {
@@ -194,4 +196,94 @@ img {
   vertical-align: middle;
   display: table-cell;
   border-radius: 4px;
+}
+
+.content .second-content-inside {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: minmax(0, auto);   /* 593px로 주려 했으나 콘텐츠가 많아! */
+}
+
+.content .content-value {
+  width: 340px;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+}
+
+.content .content-value .soldout::before {
+  content: '';
+  background-image: url(./images/badge.png);
+  width: 110px;
+  height: 110px;
+  /* box-shadow: inset 0 0 20px red; */
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+.content .content-value .value-header .value-img {
+  border-bottom: 4px solid #111;
+  max-width: 340px;
+}
+
+.content .content-value .header-hash{
+  display: flex;
+  gap: 4px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.content .content-value .hash-content {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6230A2;
+  background-color: #EBDBFF;
+  border: 0px solid;
+  padding: 2px 12px 3px;
+  border-radius: 12px;
+}
+
+.content .content-value .value-content{
+  max-width: 340px;
+}
+
+.content .content-value .value-content .content-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #111;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: fit-content;
+  min-height: 58px;
+}
+
+.content .content-value .value-content .content-explain {
+  font-size: 14px;
+  line-height: 22px;
+  padding: 20px;
+  font-weight: 400;
+  color: #333;
+  min-height: 132px;
+}
+
+.content .content-value .value-futter .futter-member::before{
+  content: '';
+  display: block;
+  width: 320px;
+  height: 4px;
+  background-color: #eee;
+  margin-left: auto;
+  margin-bottom: 16px;
+}
+
+.content .content-value .value-futter .futter-member{
+  font-weight: 400;
+  font-size: 14px;
+  color: #999;
+  width: fit-content;
+  margin-left: 22px;
+  margin-bottom: 23px;
 }

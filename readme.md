@@ -1,4 +1,4 @@
-자~ 드가자~
+
 
 https://www.figma.com/design/Yc3Vek0CDh5LAOY2qIGVoq/ZIGZAG/duplicate
 
@@ -20,7 +20,7 @@ Build something
 - If you are going to use a passage of Lorem Ipsum.
 - The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
 
-Scrap
+Scraph
 Reference
 - Once is therefore always free form repetition, injected humor, or non-characterisic words etc.
 - Predefined chunks as necessary, making this the first true generator on the internet.
