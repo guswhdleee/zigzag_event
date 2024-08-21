@@ -1,8 +1,3 @@
-21일 6:30분 소요
-3개 전체를 감쌀 레이아웃
-3개 전체 flex box
-3개 내부를 flex box
-
 자~ 드가자~
 
 https://www.figma.com/design/Yc3Vek0CDh5LAOY2qIGVoq/ZIGZAG/duplicate

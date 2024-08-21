@@ -1,5 +1,5 @@
 /* CSS Reset */
-p, ul, h1, h2 {
+p, ul, h1, h2, h3 {
   margin: unset;
   padding: unset;
 }
@@ -167,4 +167,31 @@ img {
   font-size: 1.4em;
 }
 
+.header .second-header-inside {
+  display: flex;
+  align-items: center;
+  padding-top: 92px;
+}
 
+.header .second-header-inside .header-title {
+  font-size: 40px;
+  color: #f98173;
+  line-height: 44px;
+  font-weight: 500;
+  max-width: 360px;
+}
+
+.header .second-header-inside .header-content {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  height: 48px;
+  line-height: 48px;
+  width: 208px;
+  background-color: #ff4500;
+  margin-left: auto;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  border-radius: 4px;
+}
